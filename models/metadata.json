@@ -1,0 +1,44 @@
+{
+    "selected_model": "HistGradientBoosting",
+    "target": "next_hour_kwh",
+    "features": [
+        "target_hour",
+        "target_day_of_week",
+        "target_month",
+        "target_is_weekend",
+        "active_kwh_lag_0",
+        "active_kwh_lag_1",
+        "active_kwh_lag_2",
+        "active_kwh_lag_23",
+        "active_kwh_lag_167",
+        "active_kwh_mean_3h",
+        "active_kwh_mean_24h",
+        "sub1_kwh_lag_0",
+        "sub2_kwh_lag_0",
+        "sub3_kwh_lag_0",
+        "sub1_kwh_mean_24h",
+        "sub2_kwh_mean_24h",
+        "sub3_kwh_mean_24h"
+    ],
+    "classification_thresholds": {
+        "low_medium": 0.3987826666666666,
+        "medium_high": 1.4093253333333333
+    },
+    "recommendation_thresholds": {
+        "sub1_high": 0.3334000000000015,
+        "sub2_high": 0.072,
+        "sub3_high": 1.064
+    },
+    "validation_metrics": {
+        "MAE": 0.35199060201546406,
+        "RMSE": 0.5089758595367484,
+        "MSE": 0.2590564255911718,
+        "R2": 0.6758165199350962
+    },
+    "test_metrics": {
+        "MAE": 0.3102447631421965,
+        "RMSE": 0.44786256273075814,
+        "MSE": 0.20058087509576225,
+        "R2": 0.5979661811007096
+    }
+}
